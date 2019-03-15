@@ -140,8 +140,7 @@ Highcharts.chart('question2', {
 
 });
 
-
-Highcharts.chart('question3', {
+Highcharts.chart('question3uke', {
 
     chart: {
         type: 'column'
@@ -192,8 +191,49 @@ Highcharts.chart('question3', {
         name: 'UK Equities Long',
         data: [2, 5, 4, 7, 2, 5, 3, 2, 5],
         stack: 'uke'
+    }]
+});
+
+Highcharts.chart('question3gbp', {
+
+    chart: {
+        type: 'column'
     },
-    {
+
+    title: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: ['1st', '4th', '5th', '6th', '7th', '8th', '11th', '12th', '13th', '14th'],
+        title: {
+            text: 'March'
+        }
+    },
+
+    yAxis: {
+        allowDecimals: false,
+        min: 0,
+        title: {
+            text: 'Percentage of Respondents'
+        }
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y + '<br/>' +
+                'Total: ' + this.point.stackTotal;
+        }
+    },
+
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+
+    series: [{
         name: 'GBP/USD Short',
         data: [4, 7, 2, 5, 3, 4, 4, 2, 5],
         stack: 'gbp'
@@ -205,7 +245,49 @@ Highcharts.chart('question3', {
         name: 'GBP/USD Long',
         data: [2, 5, 6, 2, 1, 4, 7, 2, 5, 3],
         stack: 'gbp'
+    }]
+});
+
+Highcharts.chart('question3vix', {
+
+    chart: {
+        type: 'column'
     },
+
+    title: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: ['1st', '4th', '5th', '6th', '7th', '8th', '11th', '12th', '13th', '14th'],
+        title: {
+            text: 'March'
+        }
+    },
+
+    yAxis: {
+        allowDecimals: false,
+        min: 0,
+        title: {
+            text: 'Percentage of Respondents'
+        }
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y + '<br/>' +
+                'Total: ' + this.point.stackTotal;
+        }
+    },
+
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+
+    series: [
     {
         name: 'VIX Short',
         data: [4, 7, 2, 5, 3, 3, 4, 4, 2, 5],
