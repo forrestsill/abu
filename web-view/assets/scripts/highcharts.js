@@ -32,12 +32,12 @@ Highcharts.chart('question1', {
             [2733, 2853, 2939, 2980, 3080],
             [2714, 2762, 2817, 2870, 2918],
             [2724, 2802, 2806, 2871, 2950],
-            [2834, 2836, 2864, 2882, 2910],
+            [2654, 2836, 2864, 2882, 2910],
             [2714, 2762, 2817, 2870, 2918],
             [2714, 2762, 2817, 2870, 2918],
+            [2714, 2762, 2837, 2890, 2928],
             [2714, 2762, 2817, 2870, 2918],
-            [2714, 2762, 2817, 2870, 2918],
-            [2714, 2762, 2817, 2870, 2918]
+            [2724, 2802, 2806, 2871, 2950],
         ],
         tooltip: {
             headerFormat: '<em>CIO Survey for March {point.key}</em><br/>'
@@ -97,7 +97,7 @@ Highcharts.chart('question2', {
     },
 
     series: [{
-        name: 'Closing price',
+        name: 'Conviction',
         data: [
             [-.8, -.2, 0, .8, 1.3],
             [-.8, -.2, .4, .9, 1.4],
@@ -186,37 +186,37 @@ Highcharts.chart('question3', {
         stack: 'uke'
     }, {
         name: 'UK Equities Neutral',
-        data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5],
+        data: [4, 7, 2, 5, 3, 3, 4, 4, 2, 5],
         stack: 'uke'
     }, {
         name: 'UK Equities Long',
-        data: [2, 5, 6, 2, 1, 3, 4, 4, 2, 5],
+        data: [2, 5, 4, 7, 2, 5, 3, 2, 5],
         stack: 'uke'
     },
     {
         name: 'GBP/USD Short',
-        data: [5, 3, 4, 7, 2, 3, 4, 4, 2, 5],
+        data: [4, 7, 2, 5, 3, 4, 4, 2, 5],
         stack: 'gbp'
     }, {
         name: 'GBP/USD Neutral',
-        data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5],
+        data: [3, 4, 4, 4, 7, 2, 5, 3, 2, 5],
         stack: 'gbp'
     }, {
         name: 'GBP/USD Long',
-        data: [2, 5, 6, 2, 1, 3, 4, 4, 2, 5],
+        data: [2, 5, 6, 2, 1, 4, 7, 2, 5, 3],
         stack: 'gbp'
     },
     {
         name: 'VIX Short',
-        data: [5, 3, 4, 7, 2, 3, 4, 4, 2, 5],
+        data: [4, 7, 2, 5, 3, 3, 4, 4, 2, 5],
         stack: 'vix'
     }, {
         name: 'VIX Neutral',
-        data: [3, 4, 4, 2, 5, 3, 4, 4, 2, 5],
+        data: [3, 4, 4, 4, 7, 2, 5, 3, 2, 5],
         stack: 'vix'
     }, {
         name: 'VIX Long',
-        data: [2, 5, 6, 2, 1, 3, 4, 4, 2, 5],
+        data: [2, 5, 6, 2, 1, 4, 7, 2, 5, 3],
         stack: 'vix'
     }]
 });
